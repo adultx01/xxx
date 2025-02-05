@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Entertainment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            background-color: #1a1a1a; 
+            color: white; 
+            background-image: url('https://ryanmurrant.com/wp-content/uploads/sites/15998/2024/03/Intimate-Couple-Shoot-Romantic-Lovers-3.jpg'); /* Replace with your URL */
+            background-size: cover; 
+            background-position: center; 
+        }
+        .navbar { background-color: #222; }
+        .video-card { position: relative; overflow: hidden; margin-bottom: 20px; }
+        .video-card video { width: 100%; border-radius: 5px; transition: transform 0.3s; cursor: pointer; }
+        .video-title { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 5px; border-radius: 5px; }
+        .video-url {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AdultX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Trending</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h2>Trending Videos</h2>
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-md-4">
+                <div class="video-card">
+                    <video id="video1" onclick="playVideo('video1', 'https://your-url-1.com')">
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-title">Hot Video #1</div>
+                    <div class="video-url"><a href="https://your-url-1.com" target="_blank">Visit Link</a></div>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-md-4">
+                <div class="video-card">
+                    <video id="video2" onclick="playVideo('video2', 'https://your-url-2.com')">
+                        <source src="videos/video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-title">Hot Video #2</div>
+                    <div class="video-url"><a href="https://your-url-2.com" target="_blank">Visit Link</a></div>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-md-4">
+                <div class="video-card">
+                    <video id="video3" onclick="playVideo('video3', 'https://your-url-3.com')">
+                        <source src="videos/video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-title">Hot Video #3</div>
+                    <div class="video-url"><a href="https://your-url-3.com" target="_blank">Visit Link</a></div>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="col-md-4">
+                <div class="video-card">
+                    <video id="video4" onclick="playVideo('video4', 'https://arolinks.com/s70')">
+                        <source src="C:\Users\jaiku\Desktop\insta page\Website\video_2025-02-01_00-21-22.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-title">Hot Video #4</div>
+                    <div class="video-url"><a href="https://arolinks.com/s70" target="_blank">Visit Link</a></div>
+                </div>
+            </div>
+            <!-- Video 5 -->
+            <div class="col-md-4">
+                <div class="video-card">
+                    <video id="video5" onclick="playVideo('video5', 'https://your-url-5.com')">
+                        <source src="videos/video5.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-title">Hot Video #5</div>
+                    <div class="video-url"><a href="https://your-url-5.com" target="_blank">Visit Link</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function playVideo(videoId, url) {
+            window.open(url, '_blank'); // Opens the URL in a new tab
+
+            setTimeout(() => {  // Delays the video start
+                const video = document.getElementById(videoId);
+                if (video.paused) {
+                    video.play();
+                }
+            }, 500); // Delay in milliseconds (adjust if needed)
+        }
+    </script>
+</body>
+</html>
